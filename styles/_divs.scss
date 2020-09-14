@@ -12,7 +12,7 @@
 }
 
 #home-page-display-tablet {
-	@media (min-width: $tablet-breakpoint) {
+	@media (max-width: $tablet-breakpoint) {
 		display: none;
 	}
 }

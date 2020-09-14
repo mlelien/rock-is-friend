@@ -106,7 +106,7 @@ p {
   }
 }
 
-@media (min-width: 76.8rem) {
+@media (max-width: 76.8rem) {
   #home-page-display-tablet {
     display: none;
   }
