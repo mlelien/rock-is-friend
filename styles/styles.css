@@ -100,13 +100,13 @@ p {
   top: -14rem;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 992px) {
   #homepage-display-desktop {
     display: none;
   }
 }
 
-@media (min-width: 76.81rem) {
+@media (min-width: 992px) {
   #home-page-display-tablet {
     display: none;
   }

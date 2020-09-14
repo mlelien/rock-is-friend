@@ -6,13 +6,13 @@
 	position: relative;
 	top: -14rem;
 
-	@media (max-width: $tablet-breakpoint) {
+	@media (max-width: $laptop) {
 		display: none;
 	}
 }
 
 #home-page-display-tablet {
-	@media (min-width: $tablet-breakpoint + .01rem) {
+	@media (min-width: $laptop) {
 		display: none;
 	}
 }
