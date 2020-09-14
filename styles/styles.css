@@ -106,12 +106,6 @@ p {
   }
 }
 
-@media (max-width: 76.8rem) {
-  #home-page-display-tablet {
-    display: none;
-  }
-}
-
 #go-button-col {
   position: relative;
   top: -6rem;
