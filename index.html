@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rock is Friend</title>
+
+	<link rel="stylesheet" href="./styles/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="./styles/styles.css">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;500&display=swap" rel="stylesheet">
+	<script src='./script.js'></script>
+</head>
+<body>
+	<nav>
+		<div class="row">
+			<div class="col-3">
+				<img src="./assets/logo.png" alt="logo">
+			</div>
+			<div class="d-flex col-9 flex-row-reverse align-items-center">
+				<div>
+					<button class='btn-light mr-4'>Login / Signup</button>
+					<button class='btn-dark'>Get Your Rock</button>
+				</div>
+			</div>
+		</div>
+	</nav>
+	<div class="container">
+		<div class="row d-flex justify-content-center pt-5">
+			<h1 class="title">GIVE YOURSELF</h1>
+		</div>
+		<div class="row d-flex justify-content-center">
+			<h1 class="subtitle" id='split-pet'>A PET <span class="pink-text" id='split-rock'>ROCK</span></h1>
+		</div>
+		<div class="row" id='homepage-display-desktop'>
+			<div class="d-flex align-items-center">
+				<div id='homepage-line'>				
+					<svg width="1058px" height="2px" viewBox="0 0 1058 2" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+						<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+							<g id="Home---1" transform="translate(-170.000000, -472.000000)" stroke="#F99084" stroke-width="2">
+								<line x1="170" y1="473" x2="1228" y2="473" id="Path-8"></line>
+							</g>
+						</g>
+					</svg>
+				</div>
+				<div class="col">
+					<img src="./assets/equation.png" alt="equation">
+				</div>
+				<div class="col">
+					<img src="./assets/og-main-rock.png" alt="main rock">
+				</div>
+				<div class="col">
+					<button class='btn-pink btn-spacing-large'>Let's Go</button>
+				</div>
+			</div>
+		</div>
+
+		<div id="home-page-display-tablet">
+			<div class="row d-flex justify-content-center">
+				<img src="./assets/og-main-rock.png" alt="main rock" id='og-main-rock'>
+			</div>
+			<div class="row d-flex justify-content-center" id='go-button-col'>
+				<button class='btn-pink btn-spacing-large'>Let's Go</button>
+			</div>
+		</div>
+
+		<div id="how-container">
+			<div class="row">
+				<div class="col d-flex justify-content-end mr-lg">
+					<div class="how-selection d-flex align-items-center selected" id='how-photo' onclick="onHowItWorks()">
+						<img src="./assets/how-picture-selected.png" alt="picture how it works">
+						<h3>picture</h4>
+					</div>
+				</div>
+				<div class="col d-flex justify-content-start">
+					<div class="how-selection d-flex align-items-center" id='how-text' onclick="onHowItWorks()">
+						<img src="./assets/how-text-selected.png" alt="text how it works">
+						<h3>text</h4>
+					</div>
+				</div>
+			</div>
+
+			<div class="row d-flex justify-content-center">
+				<div class="col-10" id='how-box'>
+					<div class="row justify-content-center">
+						<h2>how does engraving your <span class="pink-text">picture</span> work?</h2>
+					</div>
+					<div class="row justify-content-center how-step mt-5">
+						<div class="d-flex align-items-center col-4">
+							<h3>01</h3>
+							<img src="./assets/step-picture.png" alt="picture">
+							<p>Upload your picture or logo</p>
+						</div>
+						<div class="d-flex align-items-center col-4">
+							<h3>01</h3>
+							<img src="./assets/step-illustration.png" alt="picture">
+							<p>Upload your picture or logo</p>
+						</div>
+						<div class="d-flex align-items-center col-4">
+							<h3>01</h3>
+							<img src="./assets/step-shipping.png" alt="picture">
+							<p>Upload your picture or logo</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

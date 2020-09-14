@@ -1,0 +1,43 @@
+#homepage-line {
+	position: absolute;
+}
+
+#homepage-display-desktop {
+	position: relative;
+	top: -14rem;
+
+	@media (max-width: $tablet-breakpoint) {
+		display: none;
+	}
+}
+
+#home-page-display-tablet {
+	@media (min-width: $tablet-breakpoint) {
+		display: none;
+	}
+}
+
+#go-button-col {
+	position: relative;
+	top: -6rem;
+}
+
+#split-pet {
+	margin-right: 2rem;
+
+	@media (max-width: $tablet-breakpoint) {
+		margin-right: 0;
+	}
+}
+
+#split-rock {
+	margin-left: 18rem;
+
+	@media (max-width: $tablet-breakpoint) {
+		margin-left: 0;
+	}
+}
+
+#main-rock {
+	box-shadow: 0px 59px 78px -59px black;
+}

@@ -1,0 +1,42 @@
+#how-container {
+	position: relative;
+	top: -14rem;
+
+	@media (max-width: $tablet-breakpoint) {
+		top: 0rem;
+	}
+}
+
+.how-selection {
+	opacity: 0.5;
+
+	img {
+		width: 12rem;
+		margin-right: 1.6rem;
+		z-index: 2;
+	}
+
+	&.selected {
+		opacity: 1.0;
+	}
+}
+
+#how-box {
+	background-color: white;
+	border: 2px solid #ECEADF;
+	border-radius: 8px;
+
+	padding: 2rem;
+	margin-top: -0.2rem;
+
+	width: 80%;
+}
+
+.how-step {
+	word-wrap: break-word;
+
+	img {
+		width: 8rem;
+		margin: 0 1rem;
+	}
+}
