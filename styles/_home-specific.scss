@@ -12,9 +12,9 @@
 }
 
 #home-page-display-tablet {
-	// @media (min-width: $tablet-breakpoint) {
-	// 	display: none;
-	// }
+	@media (min-width: $tablet-breakpoint + .01rem) {
+		display: none;
+	}
 }
 
 #go-button-col {
