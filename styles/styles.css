@@ -9,6 +9,7 @@ html {
 body {
   background-color: #ECEADF;
   margin: 0%;
+  margin-bottom: 2rem;
   background-image: url(/./assets/background.svg);
   background-repeat: no-repeat;
   background-position: right center;
@@ -97,7 +98,12 @@ p {
 
 #homepage-display-desktop {
   position: relative;
-  top: -14rem;
+  top: -11rem;
+}
+
+#homepage-display-desktop button {
+  white-space: nowrap;
+  margin-left: 6rem;
 }
 
 @media (max-width: 992px) {
@@ -112,26 +118,21 @@ p {
   }
 }
 
-#go-button-col {
-  position: relative;
-  top: -6rem;
-}
-
 #split-pet {
-  margin-right: 2rem;
+  margin-right: -2rem;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 1200px) {
   #split-pet {
     margin-right: 0;
   }
 }
 
 #split-rock {
-  margin-left: 18rem;
+  margin-left: 21rem;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 1200px) {
   #split-rock {
     margin-left: 0;
   }
@@ -142,14 +143,28 @@ p {
           box-shadow: 0px 59px 78px -59px black;
 }
 
+#go-button-col {
+  position: relative;
+  top: -6rem;
+}
+
+@media (max-width: 1200px) {
+  #go-button-col {
+    top: -3rem;
+  }
+  #go-button-col button {
+    padding: 12px 120px;
+  }
+}
+
 #how-container {
   position: relative;
   top: -14rem;
 }
 
-@media (max-width: 76.8rem) {
+@media (max-width: 1200px) {
   #how-container {
-    top: 0rem;
+    top: 3rem;
   }
 }
 
@@ -161,6 +176,12 @@ p {
   width: 12rem;
   margin-right: 1.6rem;
   z-index: 2;
+}
+
+@media (max-width: 1200px) {
+  .how-selection img {
+    width: 9rem;
+  }
 }
 
 .how-selection.selected {
@@ -176,12 +197,18 @@ p {
   width: 80%;
 }
 
-.how-step {
+#how-steps {
   word-wrap: break-word;
 }
 
-.how-step img {
+#how-steps img {
   width: 8rem;
   margin: 0 1rem;
+}
+
+@media (max-width: 1200px) {
+  #how-steps {
+    padding-left: 6.5rem;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

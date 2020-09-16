@@ -2,8 +2,8 @@
 	position: relative;
 	top: -14rem;
 
-	@media (max-width: $tablet-breakpoint) {
-		top: 0rem;
+	@media (max-width: $desktop) {
+		top: 3rem;
 	}
 }
 
@@ -14,6 +14,10 @@
 		width: 12rem;
 		margin-right: 1.6rem;
 		z-index: 2;
+
+		@media (max-width: $desktop) {
+			width: 9rem;
+		}
 	}
 
 	&.selected {
@@ -32,11 +36,15 @@
 	width: 80%;
 }
 
-.how-step {
+#how-steps {
 	word-wrap: break-word;
 
 	img {
 		width: 8rem;
 		margin: 0 1rem;
+	}
+
+	@media (max-width: $desktop) {
+		padding-left: 6.5rem;
 	}
 }
