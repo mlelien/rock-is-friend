@@ -7,14 +7,14 @@
 	}
 }
 
-#how-selectors {
+#how-two-selectors {
 	@media (max-width: $mobile) {
 		display: none;
 	}
 }
 
-#how-selectors-mobile {
-	@media (min-width: $tablet) {
+#how-two-selectors-mobile {
+	@media (min-width: $mobile) {
 		display: none;
 	}
 }

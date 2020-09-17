@@ -21,8 +21,8 @@ button {
   font-size: 1.2rem;
   letter-spacing: 2px;
   border-radius: 20px;
-  padding: 10px 40px;
   border: none;
+  padding: 10px 40px;
   opacity: 1.0;
   -webkit-transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -176,13 +176,13 @@ p {
 }
 
 @media (max-width: 576px) {
-  #how-selectors {
+  #how-two-selectors {
     display: none;
   }
 }
 
-@media (min-width: 768px) {
-  #how-selectors-mobile {
+@media (min-width: 576px) {
+  #how-two-selectors-mobile {
     display: none;
   }
 }
