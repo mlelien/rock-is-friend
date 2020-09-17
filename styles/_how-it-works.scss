@@ -7,22 +7,37 @@
 	}
 }
 
+#how-selectors {
+	@media (max-width: $mobile) {
+		display: none;
+	}
+}
+
+#how-selectors-mobile {
+	@media (min-width: $tablet) {
+		display: none;
+	}
+}
+
 .how-selection {
 	opacity: 0.5;
-
-	img {
-		width: 12rem;
-		margin-right: 1.6rem;
-		z-index: 2;
-
-		@media (max-width: $desktop) {
-			width: 9rem;
-		}
-	}
 
 	&.selected {
 		opacity: 1.0;
 	}
+}
+
+.how-img  {
+	width: 12rem;
+	margin-right: 1.6rem;
+
+	@media (max-width: $desktop) {
+		width: 9rem;
+	}
+
+	@media (max-width: $mobile) {
+		margin-right: 0;
+	}	
 }
 
 #how-box {
@@ -31,9 +46,11 @@
 	border-radius: 8px;
 
 	padding: 2rem;
-	margin-top: -0.2rem;
+	margin-top: -0.5rem;
 
 	width: 80%;
+
+	z-index: -1;
 }
 
 #how-steps {
@@ -47,4 +64,13 @@
 	@media (max-width: $desktop) {
 		padding-left: 6.5rem;
 	}
+
+	@media (max-width: $mobile) {
+		padding-left: 0;
+	}
+}
+
+.just-how-div {
+	position: absolute;
+	top: -0.3rem;
 }

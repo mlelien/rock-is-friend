@@ -1,6 +1,6 @@
 function onHowItWorks(self) {
-	const howPhoto = document.getElementById('how-photo');
-	const howText = document.getElementById('how-text');
+	const howPhotos = document.getElementsByClassName('how-photo');
+	const howTexts = document.getElementsByClassName('how-text');
 	
 	const howTitle = document.getElementById('how-box').getElementsByTagName('span')[0];
 
@@ -8,15 +8,15 @@ function onHowItWorks(self) {
 	const descriptionSteps = document.getElementById('how-steps').getElementsByTagName('p');
 
 	if (self.id === 'how-photo') {
-		onHowPhoto(howPhoto, howText, howTitle, imageSteps, descriptionSteps);
+		onhowPhotos(howPhotos, howTexts, howTitle, imageSteps, descriptionSteps);
 	} else {
-		onHowText(howPhoto, howText, howTitle, imageSteps, descriptionSteps);
+		onhowTexts(howPhotos, howTexts, howTitle, imageSteps, descriptionSteps);
 	}
 }
 
-function onHowPhoto(howPhoto, howText, howTitle, imageSteps, descriptionSteps) {
-	onSelected(howPhoto);
-	onDeselected(howText);
+function onhowPhotos(howPhotos, howTexts, howTitle, imageSteps, descriptionSteps) {
+	onSelected(howPhotos);
+	onDeselected(howTexts);
 
 	howTitle.innerHTML = 'photo';
 
@@ -28,9 +28,9 @@ function onHowPhoto(howPhoto, howText, howTitle, imageSteps, descriptionSteps) {
 	descriptionSteps[2].innerHTML = 'Goes on your pet rock!';
 }
 
-function onHowText(howPhoto, howText, howTitle, imageSteps, descriptionSteps) {
-	onSelected(howText);
-	onDeselected(howPhoto);
+function onhowTexts(howPhotos, howTexts, howTitle, imageSteps, descriptionSteps) {
+	onSelected(howTexts);
+	onDeselected(howPhotos);
 
 	howTitle.innerHTML = 'text'
 
@@ -42,12 +42,20 @@ function onHowText(howPhoto, howText, howTitle, imageSteps, descriptionSteps) {
 	descriptionSteps[2].innerHTML = "Goes on your pet rock!";
 }
 
-function onSelected(selectedObj) {
-	selectedObj.classList.add('selected');
-	selectedObj.getElementsByTagName('img')[0].src = './assets/how/' + selectedObj.id + '-selected.png';
+function onSelected(selectedObjs) {
+	for (let selectedObj of selectedObjs) {
+		console.log('onSelected');
+		console.log(selectedObj);
+		console.log(selectedObj.getElementsByTagName('img')[0]);
+		selectedObj.classList.add('selected');
+		selectedObj.getElementsByTagName('img')[0].src = './assets/how/' + selectedObj.id + '-selected.png';
+	}
 }
 
-function onDeselected(deselectedObj) {
-	deselectedObj.classList.remove('selected');
-	deselectedObj.getElementsByTagName('img')[0].src = './assets/how/' + deselectedObj.id + '.png';
+function onDeselected(deselectedObjs) {
+	for (let deselectedObj of deselectedObjs) {
+		console.log('onDeselected');
+		deselectedObj.classList.remove('selected');
+		deselectedObj.getElementsByTagName('img')[0].src = './assets/how/' + deselectedObj.id + '.png';
+	}
 }
