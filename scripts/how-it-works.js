@@ -44,9 +44,6 @@ function onhowTexts(howPhotos, howTexts, howTitle, imageSteps, descriptionSteps)
 
 function onSelected(selectedObjs) {
 	for (let selectedObj of selectedObjs) {
-		console.log('onSelected');
-		console.log(selectedObj);
-		console.log(selectedObj.getElementsByTagName('img')[0]);
 		selectedObj.classList.add('selected');
 		selectedObj.getElementsByTagName('img')[0].src = './assets/how/' + selectedObj.id + '-selected.png';
 	}
@@ -54,7 +51,6 @@ function onSelected(selectedObjs) {
 
 function onDeselected(deselectedObjs) {
 	for (let deselectedObj of deselectedObjs) {
-		console.log('onDeselected');
 		deselectedObj.classList.remove('selected');
 		deselectedObj.getElementsByTagName('img')[0].src = './assets/how/' + deselectedObj.id + '.png';
 	}

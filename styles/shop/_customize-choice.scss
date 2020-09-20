@@ -1,0 +1,26 @@
+.customize-choice {
+	background-color: white;
+	box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, .22);
+
+	border: 1px solid $off-black;
+	border-radius: 12px;
+
+	width: 32rem;
+	padding: 2rem;
+	margin-bottom: 2rem;
+
+	h3 {
+		font-size: 1.6rem;
+		text-align: start;
+	}
+
+	p {
+		text-align: start;
+		margin: 0.3rem 0 0 0;
+	}
+}
+
+.check {
+	width: 2rem;
+	box-shadow: 0px 6px 11px -6px rgba(0, 0, 0, .22);
+}

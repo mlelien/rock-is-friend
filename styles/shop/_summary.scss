@@ -1,0 +1,73 @@
+.summary-desktop {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	right: 5%;
+
+	padding-left: 4rem;
+	padding-top: 10rem;
+	// border-left: 1px solid $off-black;
+
+	z-index: -1;
+
+	// overflow: scroll;
+
+	@media (max-width: $desktop) {
+		display: none;
+	}
+}
+
+.cost {
+	margin-top: 3rem;
+	margin-bottom: 8rem;
+	padding-top: 4rem;
+
+	border-top: 1px solid $off-black;
+	// border-left: 1px solid $off-black;
+}
+
+// .summary-line {
+// 	position:fixed; 
+
+// 	height:100%; 
+// 	width:100%;
+
+// 	top: 0;
+// 	left: 18%;
+// }
+
+.connection {
+	margin-top: -1rem;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	position: absolute;
+	z-index: -20;
+}
+
+.side-2 {
+	margin-top: 9rem;
+}
+
+// ------- RECTANGLE ------- //
+
+.pink-rect {
+	width: 14rem;
+	height: 2.5rem;
+}
+
+// ------- TEXT ------- //
+.summary-title {
+	color: $off-black;
+	opacity: 50%;
+}
+
+// ------- STEP ICON ------- //
+.step-icon {
+	width: 2rem;
+	height: 2rem;
+}
+
+.hidden-step {
+	visibility: hidden;
+}
