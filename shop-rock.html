@@ -1,213 +1,370 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rock is Friend</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock is Friend</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-	<link rel="stylesheet" href="./styles/css/styles.css">
+	<link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+    <!-- <link rel="stylesheet" href="./styles/css/styles.css" /> -->
+    <link rel="stylesheet" href="./styles/styles.css" />
 
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
-	<script src='./scripts/customize-choice.js'></script>
-</head>
-<body>
-	<nav>
-		<div class="row">
-			<div class="col-3">
-				<img src="./assets/logo.png" alt="logo">
-			</div>
-			<div class="d-flex col-9 flex-row-reverse align-items-center">
-				<div>
-					<button class='btn-main btn-light mr-4'>Login / Signup</button>
-					<button class='btn-main btn-dark'>Get Your Rock</button>
-				</div>
-			</div>
-		</div>
-	</nav>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <nav>
+      <div class="row">
+        <div class="col-3">
+          <img src="./assets/logo.png" alt="logo" />
+        </div>
+        <div class="d-flex col-9 flex-row-reverse align-items-center">
+          <div>
+            <button class="btn-main btn-light mr-4">Login / Signup</button>
+            <button class="btn-main btn-dark">Get Your Rock</button>
+          </div>
+        </div>
+      </div>
+    </nav>
 
-	<div class="container">
-		<div class="shop-title row">
-			<h1><span class="pink-text">rock</span> design studio</h1>
-		</div>
-		<div class="row">
-			<h2 class="shop-subtitle">select rock size</h2>
-		</div>
-		<button class="customize-choice row d-flex align-items-center pl-0" id='regular' onclick="onCustomize(this)">
-			<div class="col-2">
-				<img class='check' id='regular-img' src="./assets/customize/check.png" alt="check">
-			</div>
-			<div class="col">
-				<div class="row d-flex flex-column">
-					<h3>regular</h3>
-					<p>About 3-inches</p>
-				</div>
-			</div>
-		</button>
-		<button class="customize-choice row d-flex align-items-center pl-0" id='mini' onclick="onCustomize(this)">
-			<div class="col-2">
-				<img class='check' id='mini-img' src="./assets/customize/uncheck.png" alt="uncheck">
-			</div>
-			<div class="col">
-				<div class="row d-flex flex-column">
-					<h3>mini</h3>
-					<p>About 2-inches</p>
-				</div>
-			</div>
-		</button>
-		<button class="customize-choice row d-flex align-items-center pl-0" id='surprise' onclick="onCustomize(this)">
-			<div class="col-2">
-				<img class='check' id='surprise-img' src="./assets/customize/uncheck.png" alt="uncheck">
-			</div>
-			<div class="col">
-				<div class="row d-flex flex-column">
-					<h3>surprise me</h3>
-					<p>Even we don't know!</p>
-				</div>
-			</div>
-		</button>
-	
-		<div class="summary-desktop">
-			<!-- <img class='summary-line' src="./assets/summary/summary-line.svg" alt="summary line" /> -->
-			<div class="row mb-5" id='summary-title'>
-				<div class="col-1 d-flex justify-content-center">
-					<img class='step-icon hidden-step' src="./assets/summary/step.png" alt="summary check">
-				</div>
-				<div class="col">
-					<h3 class='summary-title'>Design</h3>
-				</div>
-			</div>
-			<div class="row mb-5" id='rock-size'>
-				<div class="col-1 d-flex justify-content-center">
-					<div>
-						<img class='step-icon' src="./assets/summary/curr-step.png" alt="summary check">
-						<div class="connection d-flex justify-content-center">
-							<svg width="2px" height="306px" viewBox="0 0 2 306" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-								<g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-										<g id="Rock-Studio---Step---1" transform="translate(-976.000000, -172.000000)" stroke="#F99084">
-												<g id="Group-14" transform="translate(976.000000, 146.000000)">
-														<line x1="1" y1="26" x2="1" y2="332" id="Path-7"></line>
-												</g>
-										</g>
-								</g>
-							</svg>
-						</div>
-					</div>
-				</div>
-				<div class="col">
-					<h3>rock size <span class="pink-montserrat" id='size-answer'>regular</span></h3>
-				</div>
-			</div>
-			<div id="side-1">
-				<div class="row">
-					<div class="col-1 d-flex justify-content-center">
-						<img class='step-icon' src="./assets/summary/step.png" alt="summary check">
-					</div>
-					<div class="col">
-						<h3>side 1</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col d-flex align-items-center mb-5">
-						<h3>Design type:</h3>
-						<img class='pink-rect ml-2' src="./assets/summary/pink-rectangle.png" alt="pink rectangle">
-					</div>
-				</div>
-				<div class="row mb-2 mt-3">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col">
-						<img src="./assets/summary/long-tan-rect.png" alt="long tan rect">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col">
-						<img src="./assets/summary/tan-rect.png" alt="tan rect">
-					</div>
-				</div>
-			</div>
-			<div class="side-2">
-				<div class="row">
-					<div class="col-1 d-flex justify-content-center">
-						<img class='step-icon' src="./assets/summary/step.png" alt="summary check">
-					</div>
-					<div class="col">
-						<h3>side 2 (optional)</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col d-flex align-items-center mb-5">
-						<h3>Design type:</h3>
-						<img class='pink-rect ml-2' src="./assets/summary/pink-rectangle.png" alt="pink rectangle">
-					</div>
-				</div>
-				<div class="row mb-2 mt-3">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col">
-						<img src="./assets/summary/long-tan-rect.png" alt="long tan rect">
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col">
-						<img src="./assets/summary/tan-rect.png" alt="tan rect">
-					</div>
-				</div>
-			</div>
-			<div class="cost">
-				<div class="row">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col">
-						<h3 class="summary-title mb-4">cost</h3>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col mb-3">
-						<h3><span class="montserrat">x</span>1 pet rock <span class="pink-montserrat">$14</span></h3>
-					</div>
-				</div>
-				<div class="row mb-5">
-					<div class="col-1">
-						<img class='step-icon hidden-step' src="./assets/summary/step.png" class='hidden-step'>
-					</div>
-					<div class="col">
-						<h3>Total: <span class="pink-montserrat">$14</span></h3>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<footer class="shop-footer mt-5 d-flex flex-column">
-			<div class='row'>
-				<button class="btn-order-summary" onclick='showSummary()' data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">
-					<img src='./assets/summary/chevrons-up.png'/>
-					<h4> Order Summary</h4>
-				</button>
-			</div>
-			<div class="row">
-				<button class="btn-next mt-5">Next</button>
-			</div>
-		</footer>
+    <div class="container">
+      <div class="shop-title row">
+        <h1><span class="pink-text">rock</span> design studio</h1>
+      </div>
+      <div class="animate__animated" id="step-one">
+        <div class="row">
+          <h2 class="shop-subtitle">select rock size</h2>
+        </div>
+        <button
+          class="customize-choice row d-flex align-items-center pl-0"
+          id="regular"
+          onclick="onCustomize(this)"
+        >
+          <div class="col-2">
+            <img
+              class="check"
+              id="regular-img"
+              src="./assets/customize/check.png"
+              alt="check"
+            />
+          </div>
+          <div class="col">
+            <div class="row d-flex flex-column">
+              <h3>regular</h3>
+              <p>About 3-inches</p>
+            </div>
+          </div>
+        </button>
+        <button
+          class="customize-choice row d-flex align-items-center pl-0"
+          id="mini"
+          onclick="onCustomize(this)"
+        >
+          <div class="col-2">
+            <img
+              class="check"
+              id="mini-img"
+              src="./assets/customize/uncheck.png"
+              alt="uncheck"
+            />
+          </div>
+          <div class="col">
+            <div class="row d-flex flex-column">
+              <h3>mini</h3>
+              <p>About 2-inches</p>
+            </div>
+          </div>
+        </button>
+        <button
+          class="customize-choice row d-flex align-items-center pl-0"
+          id="surprise"
+          onclick="onCustomize(this)"
+        >
+            <div class="col-2">
+              <img
+                class="check"
+                id="surprise-img"
+                src="./assets/customize/uncheck.png"
+                alt="uncheck"
+              />
+            </div>
+            <div class="col">
+              <div class="row d-flex flex-column">
+                <h3>surprise me</h3>
+                <p>Even we don't know!</p>
+              </div>
+            </div>
+        </button>
+      </div>
+      <div class="secondContainer animate__animated" id="step-two"></div>
+  
+	  <footer class="shop-footer mt-5 d-flex flex-column">
+        <div class="row">
+		  <button
+            class="btn-order-summary"
+			      id="show-summary-btn"
+            data-container="body"
+            data-toggle="popover"
+            data-placement="left"
+            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+          >
+            <img src="./assets/summary/chevrons-up.png" />
+            <h4 class="order-summary-btntext">Order Summary</h4>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn-next mt-5" id="next-btn">Next</button>
+        </div>
+      </footer>
 	</div>
-</body>
+
+      <div class="summary-desktop hide" id="summary-view">
+        <!-- <img class='summary-line' src="./assets/summary/summary-line.svg" alt="summary line" /> -->
+        <div class="row mb-5" id="summary-title">
+          <div class="col-1 d-flex justify-content-center">
+            <img
+              class="step-icon hidden-step"
+              src="./assets/summary/step.png"
+              alt="summary check"
+            />
+          </div>
+          <div class="col">
+            <h3 class="summary-title">Design</h3>
+          </div>
+        </div>
+        <div class="row mb-5" id="rock-size">
+          <div class="col-1 d-flex justify-content-center">
+            <div>
+              <img
+                class="step-icon"
+                src="./assets/summary/curr-step.png"
+                alt="summary check"
+              />
+              <div class="connection d-flex justify-content-center">
+                <svg
+                  width="2px"
+                  height="306px"
+                  viewBox="0 0 2 306"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <g
+                    id="Desktop"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Rock-Studio---Step---1"
+                      transform="translate(-976.000000, -172.000000)"
+                      stroke="#F99084"
+                    >
+                      <g
+                        id="Group-14"
+                        transform="translate(976.000000, 146.000000)"
+                      >
+                        <line x1="1" y1="26" x2="1" y2="332" id="Path-7"></line>
+                      </g>
+                    </g>
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <h3>
+              rock size
+              <span class="pink-montserrat" id="size-answer">regular</span>
+            </h3>
+          </div>
+        </div>
+        <div id="side-1">
+          <div class="row">
+            <div class="col-1 d-flex justify-content-center">
+              <img
+                class="step-icon"
+                src="./assets/summary/step.png"
+                alt="summary check"
+              />
+            </div>
+            <div class="col">
+              <h3>side 1</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col d-flex align-items-center mb-5">
+              <h3>Design type:</h3>
+              <img
+                class="pink-rect ml-2"
+                src="./assets/summary/pink-rectangle.png"
+                alt="pink rectangle"
+              />
+            </div>
+          </div>
+          <div class="row mb-2 mt-3">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./assets/summary/long-tan-rect.png"
+                alt="long tan rect"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
+              <img src="./assets/summary/tan-rect.png" alt="tan rect" />
+            </div>
+          </div>
+        </div>
+        <div class="side-2">
+          <div class="row">
+            <div class="col-1 d-flex justify-content-center">
+              <img
+                class="step-icon"
+                src="./assets/summary/step.png"
+                alt="summary check"
+              />
+            </div>
+            <div class="col">
+              <h3>side 2 (optional)</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col d-flex align-items-center mb-5">
+              <h3>Design type:</h3>
+              <img
+                class="pink-rect ml-2"
+                src="./assets/summary/pink-rectangle.png"
+                alt="pink rectangle"
+              />
+            </div>
+          </div>
+          <div class="row mb-2 mt-3">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
+              <img
+                src="./assets/summary/long-tan-rect.png"
+                alt="long tan rect"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
+              <img src="./assets/summary/tan-rect.png" alt="tan rect" />
+            </div>
+          </div>
+        </div>
+        <div class="cost">
+          <div class="row">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
+              <h3 class="summary-title mb-4">cost</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mb-3">
+              <h3>
+                <span class="montserrat">x</span>1 pet rock
+                <span class="pink-montserrat">$14</span>
+              </h3>
+            </div>
+          </div>
+          <div class="row mb-5">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
+              <h3>Total: <span class="pink-montserrat">$14</span></h3>
+            </div>
+		  </div>
+		  <div class="row" id="summary-close-btn">
+			<button class="btn-next ">Close</button>
+		  </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./scripts/customize-choice.js"></script>
 </html>

@@ -1,35 +1,92 @@
+.container {
+  transition: all 0.25s;
+  @media (max-width: $desktop) {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h1 {
+      text-align: center;
+    }
+  }
+}
+.secondContainer {
+  width: 75%;
+  height: auto;
+  min-height: 100%;
+  position: fixed;
+  z-index: -1;
+  background-color: red;
+  top: 0;
+  display: none;
+
+  @media (max-width: $desktop) {
+    width: 100%;
+  }
+}
+
 .summary-desktop {
-	position: absolute;
-	height: 100%;
-	top: 0;
-	right: 5%;
+  position: absolute;
+  height: auto;
+  min-height: 100vh;
+  top: 0;
+  right: 5%;
 
-	padding-left: 4rem;
-	padding-top: 10rem;
-	// border-left: 1px solid $off-black;
+  padding-left: 4rem;
+  padding-top: 10rem;
+  border-left: 1px solid $off-black;
 
-	z-index: -1;
+  z-index: -1;
 
-	// overflow: scroll;
+  // overflow: scroll;
 
-	@media (max-width: $desktop) {
-		display: none;
-	}
+  #summary-close-btn {
+    display: none;
+  }
+
+  @media (max-width: $desktop) {
+    width: 100%;
+    border-left: none;
+    right: 0;
+    background-color: white;
+    z-index: 999;
+    overflow-x: hidden;
+    padding-left: 2rem;
+    padding-top: 5rem;
+    //display: none;
+
+    #summary-close-btn {
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+// Show / hide the summary on mobile
+@media (max-width: $desktop) {
+  .show {
+    transition: opacity 400ms;
+    display: block;
+  }
+  .hide {
+    opacity: 0;
+    display: none;
+  }
 }
 
 .cost {
-	margin-top: 3rem;
-	margin-bottom: 8rem;
-	padding-top: 4rem;
+  margin-top: 3rem;
+  margin-bottom: 8rem;
+  padding-top: 4rem;
 
-	border-top: 1px solid $off-black;
-	// border-left: 1px solid $off-black;
+  border-top: 1px solid $off-black;
+  // border-left: 1px solid $off-black;
 }
 
 // .summary-line {
-// 	position:fixed; 
+// 	position:fixed;
 
-// 	height:100%; 
+// 	height:100%;
 // 	width:100%;
 
 // 	top: 0;
@@ -37,37 +94,50 @@
 // }
 
 .connection {
-	margin-top: -1rem;
-	left: 50%;
-	transform: translateX(-50%);
-	
-	position: absolute;
-	z-index: -20;
+  margin-top: -1rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  position: absolute;
+  z-index: -20;
 }
 
 .side-2 {
-	margin-top: 9rem;
+  margin-top: 9rem;
 }
 
 // ------- RECTANGLE ------- //
 
 .pink-rect {
-	width: 14rem;
-	height: 2.5rem;
+  width: 14rem;
+  height: 2.5rem;
 }
 
 // ------- TEXT ------- //
 .summary-title {
-	color: $off-black;
-	opacity: 50%;
+  color: $off-black;
+  opacity: 50%;
 }
 
 // ------- STEP ICON ------- //
 .step-icon {
-	width: 2rem;
-	height: 2rem;
+  width: 2rem;
+  height: 2rem;
 }
 
 .hidden-step {
-	visibility: hidden;
+  visibility: hidden;
+}
+
+.btn-order-summary {
+  display: none;
+  @media (max-width: $desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h4 {
+      padding-top: 0.225rem;
+    }
+  }
 }

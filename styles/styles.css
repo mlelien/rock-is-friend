@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  background-color: #eceadf;
+  background-color: #ECEADF;
   margin: 0%;
   margin-bottom: 2rem;
   background-image: url(/./assets/background.svg);
@@ -16,7 +16,7 @@ body {
 }
 
 button {
-  opacity: 1;
+  opacity: 1.0;
   -webkit-transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
   transition: opacity 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
@@ -25,10 +25,8 @@ button:hover {
   opacity: 0.75;
 }
 
-.btn-main,
-.btn-next,
-.btn-order-summary {
-  font-family: "Bungee";
+.btn-main, .btn-next, .btn-order-summary {
+  font-family: 'Bungee';
   text-transform: uppercase;
   font-size: 1.2rem;
   letter-spacing: 2px;
@@ -41,23 +39,21 @@ button:hover {
   padding: 10px 80px;
 }
 
-.btn-dark,
-.btn-next {
+.btn-dark, .btn-next {
   background-color: black;
   color: white;
 }
 
 .btn-light {
   background-color: white;
-  color: #1a1a19;
-  border: 1px solid #1a1a19;
+  color: #1A1A19;
+  border: 1px solid #1A1A19;
 }
 
-.btn-pink,
-.btn-order-summary {
-  background-color: #f99084;
+.btn-pink, .btn-order-summary {
+  background-color: #F99084;
   color: white;
-  border: 1px solid #d97c71;
+  border: 1px solid #D97C71;
 }
 
 .btn-next {
@@ -68,10 +64,10 @@ button:hover {
 .btn-order-summary {
   border: none;
   -webkit-box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.22);
-  box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.22);
   -ms-flex-item-align: center;
-  -ms-grid-row-align: center;
-  align-self: center;
+      -ms-grid-row-align: center;
+      align-self: center;
   padding: 1.4rem 6.8rem 1.4rem 4.4rem;
 }
 
@@ -90,21 +86,19 @@ button:hover {
 nav {
   background-color: #fff;
   -webkit-box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.15);
-  box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.15);
+          box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.15);
   padding: 0 2rem;
 }
 
 nav img {
   -o-object-fit: contain;
-  object-fit: contain;
+     object-fit: contain;
   width: 14rem;
   height: 6rem;
 }
 
-h1,
-h2,
-h3 {
-  font-family: "Bungee", cursive;
+h1, h2, h3 {
+  font-family: 'Bungee', cursive;
   display: inline-block;
   margin: 0;
 }
@@ -122,7 +116,7 @@ h3 {
 }
 
 p {
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   font-size: 1.6rem;
 }
@@ -135,14 +129,12 @@ p {
   font-size: 10rem;
 }
 
-.montserrat,
-.pink-montserrat {
-  font-family: "Montserrat", sans-serif;
+.montserrat, .pink-montserrat {
+  font-family: 'Montserrat', sans-serif;
 }
 
-.pink-text,
-.pink-montserrat {
-  color: #f99084;
+.pink-text, .pink-montserrat {
+  color: #F99084;
 }
 
 .pink-montserrat {
@@ -209,7 +201,7 @@ p {
 
 #main-rock {
   -webkit-box-shadow: 0px 59px 78px -59px black;
-  box-shadow: 0px 59px 78px -59px black;
+          box-shadow: 0px 59px 78px -59px black;
 }
 
 #go-button-col {
@@ -254,7 +246,7 @@ p {
 }
 
 .how-selection.selected {
-  opacity: 1;
+  opacity: 1.0;
 }
 
 .how-img {
@@ -276,7 +268,7 @@ p {
 
 #how-box {
   background-color: white;
-  border: 2px solid #eceadf;
+  border: 2px solid #ECEADF;
   border-radius: 8px;
   padding: 2rem;
   margin-top: -0.5rem;
@@ -313,8 +305,8 @@ p {
 .customize-choice {
   background-color: white;
   -webkit-box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.22);
-  box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.22);
-  border: 1px solid #1a1a19;
+          box-shadow: 0px 9px 17px -9px rgba(0, 0, 0, 0.22);
+  border: 1px solid #1A1A19;
   border-radius: 12px;
   width: 32rem;
   padding: 2rem;
@@ -334,7 +326,7 @@ p {
 .check {
   width: 2rem;
   -webkit-box-shadow: 0px 6px 11px -6px rgba(0, 0, 0, 0.22);
-  box-shadow: 0px 6px 11px -6px rgba(0, 0, 0, 0.22);
+          box-shadow: 0px 6px 11px -6px rgba(0, 0, 0, 0.22);
 }
 
 .container {
@@ -350,11 +342,11 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .container h1 {
     text-align: center;
@@ -386,7 +378,7 @@ p {
   right: 5%;
   padding-left: 4rem;
   padding-top: 10rem;
-  border-left: 1px solid #1a1a19;
+  border-left: 1px solid #1A1A19;
   z-index: -1;
 }
 
@@ -427,14 +419,14 @@ p {
   margin-top: 3rem;
   margin-bottom: 8rem;
   padding-top: 4rem;
-  border-top: 1px solid #1a1a19;
+  border-top: 1px solid #1A1A19;
 }
 
 .connection {
   margin-top: -1rem;
   left: 50%;
   -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
+          transform: translateX(-50%);
   position: absolute;
   z-index: -20;
 }
@@ -449,7 +441,7 @@ p {
 }
 
 .summary-title {
-  color: #1a1a19;
+  color: #1A1A19;
   opacity: 50%;
 }
 
@@ -463,19 +455,24 @@ p {
 }
 
 .btn-order-summary {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  display: none;
 }
 
-.btn-order-summary h4 {
-  padding-top: 0.225rem;
+@media (max-width: 1200px) {
+  .btn-order-summary {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .btn-order-summary h4 {
+    padding-top: 0.225rem;
+  }
 }
 
 @media (max-width: 1200px) {
@@ -487,11 +484,11 @@ p {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=styles.css.map */
