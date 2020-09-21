@@ -45,7 +45,28 @@
     display: none;
   }
 
-  @media (max-width: $desktop) {
+  @media (max-width: 1024px) {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    border-left: none;
+    background-color: transparent;
+    z-index: 999;
+    overflow-x: hidden;
+    padding-left: 0rem;
+    padding-top: 0rem;
+    padding: 2.5rem;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 10rem;
+
+    #summary-background {
+      background-color: white;
+      padding: 2.5rem;
+    }
+  }
+
+  @media (max-width: $mobile) {
     width: 100%;
     border-left: none;
     right: 0;
@@ -54,6 +75,7 @@
     overflow-x: hidden;
     padding-left: 2rem;
     padding-top: 5rem;
+    margin-top: 0;
     //display: none;
 
     #summary-close-btn {

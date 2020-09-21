@@ -1,145 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rock is Friend</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock is Friend</title>
 
-	<link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="./styles/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="./styles/css/styles.css">
-	<script src='/scripts/how-it-works.js'></script>
-	<script src='/scripts/link.js'></script>
-</head>
-<body>
-	<nav>
-		<div class="row">
-			<div class="col-3">
-				<img src="/assets/logo.png" alt="logo" />
-			</div>
-			<div class="d-flex col-9 flex-row-reverse align-items-center">
-				<div>
-					<button class='btn-main btn-light mr-4'>Login / Signup</button>
-					<button class='btn-main btn-dark'>Get Your Rock</button>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<div class="container">
-		<div id="hero-title">
-			<div class="row d-flex justify-content-center pt-5">
-				<h1 class="title">GIVE YOURSELF</h1>
-			</div>
-			<div class="row d-flex justify-content-center">
-				<h1 class="subtitle" id='split-pet'>A PET <span class="pink-text" id='split-rock'>ROCK</span></h1>
-			</div>
-		</div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/css/bootstrap-grid.min.css" />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <script src="/scripts/how-it-works.js"></script>
+    <script src="/scripts/link.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="row">
+        <div class="col-3">
+          <img src="/assets/logo.png" alt="logo" />
+        </div>
+        <div class="d-flex col-9 flex-row-reverse align-items-center">
+          <div>
+            <button class="btn-main btn-light mr-4">Login / Signup</button>
+            <button class="btn-main btn-dark">Get Your Rock</button>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div id="hero-title">
+        <div class="row d-flex justify-content-center pt-5">
+          <h1 class="title">GIVE YOURSELF</h1>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <h1 class="subtitle" id="split-pet">
+            A PET <span class="pink-text" id="split-rock">ROCK</span>
+          </h1>
+        </div>
+      </div>
 
-		<div id='homepage-display-desktop'>
-			<div class="row d-flex justify-content-center">
-				<div class="d-flex align-items-center">
-					<div id='homepage-line'>				
-						<img src="./assets/home/home-line.svg" alt="home line" />
-					</div>
-					<div class="col">
-						<img src="./assets/home/equation.png" alt="equation" />
-					</div>
-					<div class="col">
-						<img src="./assets/home/og-main-rock.png" alt="main rock" />
-					</div>
-					<div class="col">
-						<button class='btn-main btn-pink btn-spacing-large' onclick="location.href(getURL('/shop-rock'))">Let's Go</button>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div id="homepage-display-desktop">
+        <div class="row d-flex justify-content-center">
+          <div class="d-flex align-items-center">
+            <div id="homepage-line">
+              <img src="./assets/home/home-line.svg" alt="home line" />
+            </div>
+            <div class="col">
+              <img src="./assets/home/equation.png" alt="equation" />
+            </div>
+            <div class="col">
+              <img src="./assets/home/og-main-rock.png" alt="main rock" />
+            </div>
+            <div class="col">
+              <button
+                class="btn-main btn-pink btn-spacing-large"
+                onclick="location.href(getURL('/shop-rock'))"
+              >
+                Let's Go
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<div id="home-page-display-tablet">
-			<div class="row d-flex justify-content-center">
-				<img src="./assets/home/og-main-rock.png" alt="main rock" id='og-main-rock' />
-			</div>
-			<div class="row d-flex justify-content-center" id='go-button-col'>
-				<button class='btn-main btn-pink btn-spacing-large' onclick="goURL('/shop-rock.html')">Let's Go</button>
-			</div>
-		</div>
+      <div id="home-page-display-tablet">
+        <div class="row d-flex justify-content-center">
+          <img
+            src="./assets/home/og-main-rock.png"
+            alt="main rock"
+            id="og-main-rock"
+          />
+        </div>
+        <div class="row d-flex justify-content-center" id="go-button-col">
+          <button
+            class="btn-main btn-pink btn-spacing-large"
+            onclick="goURL('/shop-rock.html')"
+          >
+            Let's Go
+          </button>
+        </div>
+      </div>
 
-		<div id="how-container">
-			<div class="row" id='how-two-selectors'>
-				<div class="col d-flex justify-content-end mr-lg">
-					<div class="how-selection d-flex align-items-center how-photo selected" id='how-photo' onclick="onHowItWorks(this)">
-						<div class="position-relative">
-							<img class='how-img' src="./assets/how/how-photo-selected.png" alt="picture how it works" />
-							<div class='d-flex align-items-center just-how-div'>
-								<img class='how-img' src="./assets/how/just-how-photo.png" alt="how photo" />
-								<h3>photo</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="col d-flex justify-content-start">
-					<div class="how-selection d-flex align-items-center how-text" id='how-text' onclick="onHowItWorks(this)">
-						<div class="position-relative">
-							<img class='how-img' src="./assets/how/how-text.png" alt="text how it works" />
-							<div class='d-flex align-items-center just-how-div'>
-								<img class='how-img' src="./assets/how/just-how-text.png" alt="text how it works" />
-								<h3>text</h3>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+      <div id="how-container">
+        <div class="row" id="how-two-selectors">
+          <div class="col d-flex justify-content-end mr-lg">
+            <div
+              class="how-selection d-flex align-items-center how-photo selected"
+              id="how-photo"
+              onclick="onHowItWorks(this)"
+            >
+              <div class="position-relative">
+                <img
+                  class="how-img"
+                  src="./assets/how/how-photo-selected.png"
+                  alt="picture how it works"
+                />
+                <div class="d-flex align-items-center just-how-div">
+                  <img
+                    class="how-img"
+                    src="./assets/how/just-how-photo.png"
+                    alt="how photo"
+                  />
+                  <h3>photo</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex justify-content-start">
+            <div
+              class="how-selection d-flex align-items-center how-text"
+              id="how-text"
+              onclick="onHowItWorks(this)"
+            >
+              <div class="position-relative">
+                <img
+                  class="how-img"
+                  src="./assets/how/how-text.png"
+                  alt="text how it works"
+                />
+                <div class="d-flex align-items-center just-how-div">
+                  <img
+                    class="how-img"
+                    src="./assets/how/just-how-text.png"
+                    alt="text how it works"
+                  />
+                  <h3>text</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
 
-			<div id="how-two-selectors-mobile">
-				<div class="row d-flex justify-content-center">
-					<div class="flex-column">
-						<div class="col d-flex justify-content-center">
-							<h3>photo</h3>
-						</div>
-						<div class="col">
-							<div class="how-selection selected how-photo" id='how-photo' onclick="onHowItWorks(this)">
-								<img class='how-img' src="./assets/how/how-photo-selected.png" alt="picture how it works" /> 
-							</div>
-						</div>
-					</div>
-					<div class="flex-column">
-						<div class="col d-flex justify-content-center">
-							<h3>text</h3>
-						</div>
-						<div class="col">
-							<div class="how-selection how-text" id='how-text' onclick="onHowItWorks(this)">
-								<img class='how-img' src="./assets/how/how-text.png" alt="text how it works" />
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row d-flex justify-content-center">
-				<div class="col-10" id='how-box'>
-					<div class="row justify-content-center mt-4 mt-sm-5">
-						<h2>how does the <span class="pink-text">photo</span> work?</h2>
-					</div>
-					<div class="row mt-5" id='how-steps'>
-						<div class="d-flex align-items-center col-lg-4 mb-4">
-							<h3>01</h3>
-							<img src="./assets/how/step-picture.png" alt="picture" />
-							<p>Upload your picture or logo</p>
-						</div>
-						<div class="d-flex align-items-center col-lg-4 mb-4">
-							<h3>02</h3>
-							<img src="./assets/how/step-illustration.png" alt="picture" />
-							<p>Our artists will draw a digital cartoon</p>
-						</div>
-						<div class="d-flex align-items-center col-lg-4">
-							<h3>03</h3>
-							<img src="./assets/how/step-rock.png" alt="picture" />
-							<p>Goes on your pet rock!</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</body>
+        <div id="how-two-selectors-mobile">
+          <div class="row d-flex justify-content-center">
+            <div class="flex-column">
+              <div class="col d-flex justify-content-center">
+                <h3>photo</h3>
+              </div>
+              <div class="col">
+                <div
+                  class="how-selection selected how-photo"
+                  id="how-photo"
+                  onclick="onHowItWorks(this)"
+                >
+                  <img
+                    class="how-img"
+                    src="./assets/how/how-photo-selected.png"
+                    alt="picture how it works"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="flex-column">
+              <div class="col d-flex justify-content-center">
+                <h3>text</h3>
+              </div>
+              <div class="col">
+                <div
+                  class="how-selection how-text"
+                  id="how-text"
+                  onclick="onHowItWorks(this)"
+                >
+                  <img
+                    class="how-img"
+                    src="./assets/how/how-text.png"
+                    alt="text how it works"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-10" id="how-box">
+            <div class="row justify-content-center mt-4 mt-sm-5">
+              <h2 class="mobile-centered">
+                how does the <span class="pink-text">photo</span> work?
+              </h2>
+            </div>
+            <div class="row mt-5" id="how-steps">
+              <div class="d-flex align-items-center col-lg-4 mb-4">
+                <h3>01</h3>
+                <img src="./assets/how/step-picture.png" alt="picture" />
+                <p>Upload your picture or logo</p>
+              </div>
+              <div class="d-flex align-items-center col-lg-4 mb-4">
+                <h3>02</h3>
+                <img src="./assets/how/step-illustration.png" alt="picture" />
+                <p>Our artists will draw a digital cartoon</p>
+              </div>
+              <div class="d-flex align-items-center col-lg-4">
+                <h3>03</h3>
+                <img src="./assets/how/step-rock.png" alt="picture" />
+                <p>Goes on your pet rock!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>

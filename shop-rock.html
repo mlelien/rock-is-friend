@@ -23,8 +23,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <!-- <link rel="stylesheet" href="./styles/css/styles.css" /> -->
-    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/css/styles.css" />
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -149,6 +148,7 @@
 	</div>
 
       <div class="summary-desktop hide" id="summary-view">
+        <div id="summary-background">
         <!-- <img class='summary-line' src="./assets/summary/summary-line.svg" alt="summary line" /> -->
         <div class="row mb-5" id="summary-title">
           <div class="col-1 d-flex justify-content-center">
@@ -340,7 +340,14 @@
             </div>
           </div>
           <div class="row">
-            <div class="col mb-3">
+            <div class="col-1">
+              <img
+                class="step-icon hidden-step"
+                src="./assets/summary/step.png"
+                class="hidden-step"
+              />
+            </div>
+            <div class="col">
               <h3>
                 <span class="montserrat">x</span>1 pet rock
                 <span class="pink-montserrat">$14</span>
@@ -361,7 +368,8 @@
 		  </div>
 		  <div class="row" id="summary-close-btn">
 			<button class="btn-next ">Close</button>
-		  </div>
+      </div>
+    </div>
         </div>
       </div>
     </div>
