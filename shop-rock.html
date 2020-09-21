@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock is Friend</title>
 
-	<link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Bungee&display=swap"
       rel="stylesheet"
@@ -23,7 +23,7 @@
       integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./styles/css/styles.css" />
+    <link rel="stylesheet" href="./styles/styles.css" />
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -109,29 +109,30 @@
           id="surprise"
           onclick="onCustomize(this)"
         >
-            <div class="col-2">
-              <img
-                class="check"
-                id="surprise-img"
-                src="./assets/customize/uncheck.png"
-                alt="uncheck"
-              />
+          <div class="col-2">
+            <img
+              class="check"
+              id="surprise-img"
+              src="./assets/customize/uncheck.png"
+              alt="uncheck"
+            />
+          </div>
+          <div class="col">
+            <div class="row d-flex flex-column">
+              <h3>surprise me</h3>
+              <p>Even we don't know!</p>
             </div>
-            <div class="col">
-              <div class="row d-flex flex-column">
-                <h3>surprise me</h3>
-                <p>Even we don't know!</p>
-              </div>
-            </div>
+          </div>
         </button>
       </div>
+
       <div class="secondContainer animate__animated" id="step-two"></div>
-  
-	  <footer class="shop-footer mt-5 d-flex flex-column">
+
+      <footer class="shop-footer mt-5 d-flex flex-column">
         <div class="row">
-		  <button
+          <button
             class="btn-order-summary"
-			      id="show-summary-btn"
+            id="show-summary-btn"
             data-container="body"
             data-toggle="popover"
             data-placement="left"
@@ -145,10 +146,10 @@
           <button class="btn-next mt-5" id="next-btn">Next</button>
         </div>
       </footer>
-	</div>
+    </div>
 
-      <div class="summary-desktop hide" id="summary-view">
-        <div id="summary-background">
+    <div class="summary-desktop hide" id="summary-view">
+      <div class="summary-background">
         <!-- <img class='summary-line' src="./assets/summary/summary-line.svg" alt="summary line" /> -->
         <div class="row mb-5" id="summary-title">
           <div class="col-1 d-flex justify-content-center">
@@ -365,11 +366,10 @@
             <div class="col">
               <h3>Total: <span class="pink-montserrat">$14</span></h3>
             </div>
-		  </div>
-		  <div class="row" id="summary-close-btn">
-			<button class="btn-next ">Close</button>
-      </div>
-    </div>
+          </div>
+          <div class="row">
+            <button class="btn-next mt-5" id="summary-close-btn">Close</button>
+          </div>
         </div>
       </div>
     </div>

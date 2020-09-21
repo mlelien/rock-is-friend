@@ -414,15 +414,18 @@ p {
     padding: 2.5rem;
     right: 0;
     margin: 0 auto;
-    margin-top: 10rem;
-  }
-  .summary-desktop #summary-background {
     background-color: white;
+  }
+  .summary-desktop #summary-close-btn {
+    display: block;
+    margin: 0 auto;
+  }
+  .summary-desktop .summary-background {
     padding: 2.5rem;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 570px) {
   .summary-desktop {
     width: 100%;
     border-left: none;

@@ -58,15 +58,19 @@
     padding: 2.5rem;
     right: 0;
     margin: 0 auto;
-    margin-top: 10rem;
-
-    #summary-background {
-      background-color: white;
+    //margin-top: 10rem;
+    background-color: white;
+    #summary-close-btn {
+      display: block;
+      margin: 0 auto;
+    }
+    .summary-background {
+      //background-color: white;
       padding: 2.5rem;
     }
   }
 
-  @media (max-width: $mobile) {
+  @media (max-width: 570px) {
     width: 100%;
     border-left: none;
     right: 0;
@@ -76,7 +80,6 @@
     padding-left: 2rem;
     padding-top: 5rem;
     margin-top: 0;
-    //display: none;
 
     #summary-close-btn {
       display: block;
