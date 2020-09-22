@@ -11,28 +11,15 @@
     }
   }
 }
-.secondContainer {
-  width: 75%;
-  height: auto;
-  min-height: 100%;
-  position: fixed;
-  z-index: -1;
-  background-color: red;
-  top: 0;
-  display: none;
-
-  @media (max-width: $desktop) {
-    width: 100%;
-  }
-}
 
 .summary-desktop {
   position: absolute;
   height: auto;
   min-height: 100vh;
   top: 0;
-  right: 5%;
-
+  right: 0;
+  padding-right: 5%;
+  background-color: white;
   padding-left: 4rem;
   padding-top: 10rem;
   border-left: 1px solid $off-black;
@@ -47,12 +34,11 @@
 
   @media (max-width: 1024px) {
     width: 100%;
-    min-height: 100%;
+    min-height: 100vh;
     height: auto;
     border-left: none;
     background-color: transparent;
     z-index: 999;
-    overflow-x: hidden;
     padding-left: 0rem;
     padding-top: 0rem;
     padding: 2.5rem;
@@ -60,9 +46,27 @@
     margin: 0 auto;
     //margin-top: 10rem;
     background-color: white;
+    .summary-header {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      justify-content: space-between;
+    }
     #summary-close-btn {
-      display: block;
-      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 !important;
+      width: auto;
+      appearance: none;
+      border: 0;
+      border-radius: 10rem;
+      background-color: transparent;
+      border: 0.2rem solid black;
+      width: 3rem;
+      height: 3rem;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
     .summary-background {
       //background-color: white;
@@ -164,5 +168,32 @@
     h4 {
       padding-top: 0.225rem;
     }
+  }
+}
+
+.design-type-text {
+  background-color: #eceadf;
+  height: 100px;
+  margin-bottom: -60px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 10px 25px;
+  border-radius: 8px;
+  margin-left: 15px;
+}
+
+.summary-image {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 100px;
+  background-color: blue;
+  margin-top: -30px;
+  margin-left: 15px;
+}
+
+@media (max-width: $desktop) {
+  .design-type-text {
+    width: 270px;
+    padding: 10px;
+    margin-left: 45px;
   }
 }
