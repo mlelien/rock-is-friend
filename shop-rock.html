@@ -58,8 +58,11 @@
 
     <div class="container">
       <div class="shop-title row">
-        <h1><span class="pink-text">rock</span> design studio</h1>
+        <h1 id="main-title">
+          <span class="pink-text">rock</span> design studio
+        </h1>
       </div>
+
       <div class="animate__animated" id="step-one">
         <div class="row">
           <h2 class="shop-subtitle">select rock size</h2>
@@ -124,28 +127,398 @@
             </div>
           </div>
         </button>
+        <footer class="shop-footer mt-5 d-flex flex-column">
+          <div class="row">
+            <button
+              class="btn-order-summary"
+              id="show-summary-btn"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="left"
+              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            >
+              <img src="./assets/summary/chevrons-up.png" />
+              <h4 class="order-summary-btntext">Order Summary</h4>
+            </button>
+          </div>
+          <div class="row">
+            <button class="btn-next mt-5" id="next-btn">Next</button>
+          </div>
+        </footer>
       </div>
 
-      <div class="secondContainer animate__animated" id="step-two"></div>
-
-      <footer class="shop-footer mt-5 d-flex flex-column">
-        <div class="row">
+      <div class="secondContainer animate__animated" id="step-two">
+        <div class="row" id="design-title">
+          <h2 class="shop-subtitle">Design type</h2>
+        </div>
+        <div class="pictire-text-choice-row">
           <button
-            class="btn-order-summary"
-            id="show-summary-btn"
-            data-container="body"
-            data-toggle="popover"
-            data-placement="left"
-            data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            class="customize-choice row d-flex align-items-center pl-0 choice-box"
+            id="second-step-choose-picture"
           >
-            <img src="./assets/summary/chevrons-up.png" />
-            <h4 class="order-summary-btntext">Order Summary</h4>
+            <div class="col-2 design-type-choice-image-container">
+              <img src="./assets/how/just-how-photo.png" alt="" />
+            </div>
+            <div class="col">
+              <div class="row d-flex flex-column">
+                <h3>Picture</h3>
+                <p>Engrave with your picture</p>
+              </div>
+            </div>
+          </button>
+          <div class="divider"></div>
+          <button
+            class="customize-choice row d-flex align-items-center pl-0 choice-box"
+            id="second-step-choose-text"
+          >
+            <div class="col-2 design-type-choice-image-container">
+              <img src="./assets/how/just-how-text.png" alt="" />
+            </div>
+            <div class="col">
+              <div class="row d-flex flex-column">
+                <h3>Text</h3>
+                <p>Anything you want to write</p>
+              </div>
+            </div>
           </button>
         </div>
-        <div class="row">
-          <button class="btn-next mt-5" id="next-btn">Next</button>
+        <div class="divider"></div>
+        <div
+          class="choose-picture-container row animate__animated"
+          id="choose-picture-container"
+        >
+          <div class="chosen-picture"></div>
+          <div class="chosen-picture-actions">
+            <button class="action-button">
+              <h4>Upload picture</h4>
+            </button>
+            <div class="button-subtext">
+              <div class="info-logo"><span>i</span></div>
+              <div class="info-text">
+                <p class="button-subtitle">
+                  Our atrist will hand craft your picture on your rock
+                </p>
+                <div class="info-box">
+                  <p>
+                    Each rock includes on picture. A picture on both sides will
+                    cost an additional $7
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </footer>
+        <div
+          class="customize-choice choose-text-container row animate__animated hidden"
+          id="choose-text-container"
+        >
+          <div class="choose-text-header">
+            <h3>Baloo Bhaina</h3>
+          </div>
+          <textarea></textarea>
+        </div>
+
+        <footer class="shop-footer mt-5 d-flex flex-column">
+          <div class="row">
+            <button
+              class="btn-order-summary"
+              id="show-summary-btn-step-two"
+              data-container="body"
+              data-toggle="popover"
+              data-placement="left"
+              data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus."
+            >
+              <img src="./assets/summary/chevrons-up.png" />
+              <h4 class="order-summary-btntext">Order Summary</h4>
+            </button>
+          </div>
+          <div class="row nav-btns">
+            <button class="btn-next btn-light mt-5" id="back-btn-step-two">
+              Back
+            </button>
+            <button class="btn-next mt-5" id="next-btn-cart">Next</button>
+          </div>
+        </footer>
+      </div>
+
+      <div class="thirdContainer animate__animated" id="step-three">
+        <div class="cart-items">
+          <div class="cart-item-container">
+            <button
+              class="customize-choice row d-flex align-items-center pl-0 choice-box cart-item"
+            >
+              <div class="col-2">
+                <img src="./assets/how/just-how-photo.png" alt="" />
+              </div>
+              <div class="col cart-item-text">
+                <div class="row d-flex flex-column">
+                  <h3>Rock #1</h3>
+                  <p>Select to see and edit details on the right</p>
+                </div>
+              </div>
+            </button>
+            <div class="remove-button-container">
+              <button class="remove-button">
+                <h3>Remove</h3>
+              </button>
+            </div>
+          </div>
+          <div class="cart-item-container">
+            <button
+              class="customize-choice row d-flex align-items-center pl-0 choice-box cart-item"
+            >
+              <div class="col-2">
+                <img src="./assets/how/just-how-photo.png" alt="" />
+              </div>
+              <div class="col cart-item-text">
+                <div class="row d-flex flex-column">
+                  <h3>Rock #1</h3>
+                  <p>Select to see and edit details on the right</p>
+                </div>
+              </div>
+            </button>
+            <div class="remove-button-container">
+              <button class="remove-button">
+                <h3>Remove</h3>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-summary">
+          <div class="summary-background">
+            <!-- <img class='summary-line' src="./assets/summary/summary-line.svg" alt="summary line" /> -->
+            <div class="row mb-5" id="summary-title">
+              <div class="col-1 d-flex justify-content-center">
+                <img
+                  class="step-icon hidden-step"
+                  src="./assets/summary/step.png"
+                  alt="summary check"
+                />
+              </div>
+            </div>
+            <div class="row item-title">
+              <h3>Rock #1</h3>
+              <div class="remove-button-container">
+                <button class="remove-button">
+                  <h3>Remove</h3>
+                </button>
+              </div>
+            </div>
+            <div class="row mb-5" id="rock-size">
+              <div class="col-1 d-flex justify-content-center">
+                <div>
+                  <img
+                    class="step-icon"
+                    src="./assets/summary/curr-step.png"
+                    alt="summary check"
+                  />
+                  <div class="connection d-flex justify-content-center">
+                    <svg
+                      width="2px"
+                      height="306px"
+                      viewBox="0 0 2 306"
+                      version="1.1"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                    >
+                      <g
+                        id="Desktop"
+                        stroke="none"
+                        stroke-width="1"
+                        fill="none"
+                        fill-rule="evenodd"
+                      >
+                        <g
+                          id="Rock-Studio---Step---1"
+                          transform="translate(-976.000000, -172.000000)"
+                          stroke="#F99084"
+                        >
+                          <g
+                            id="Group-14"
+                            transform="translate(976.000000, 146.000000)"
+                          >
+                            <line
+                              x1="1"
+                              y1="26"
+                              x2="1"
+                              y2="332"
+                              id="Path-7"
+                            ></line>
+                          </g>
+                        </g>
+                      </g>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="col">
+                <h3>
+                  rock size
+                  <span class="pink-montserrat" id="size-answer">regular</span>
+                </h3>
+              </div>
+            </div>
+            <div id="side-1">
+              <div class="row">
+                <div class="col-1 d-flex justify-content-center">
+                  <img
+                    class="step-icon"
+                    src="./assets/summary/step.png"
+                    alt="summary check"
+                  />
+                </div>
+                <div class="col">
+                  <h3>Front side</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+                <div class="col d-flex align-items-center mb-5">
+                  <h3>Design type:</h3>
+                  <h3
+                    id="size-answer"
+                    class="pink-montserrat"
+                    style="margin-left: 1rem"
+                  >
+                    Text
+                  </h3>
+                </div>
+              </div>
+              <div class="row mb-2 mt-3">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+                <div class="design-type-text">
+                  <h3>Hey there, my name is sean</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="side-2">
+              <div class="row">
+                <div class="col-1 d-flex justify-content-center">
+                  <img
+                    class="step-icon"
+                    src="./assets/summary/step.png"
+                    alt="summary check"
+                  />
+                </div>
+                <div class="col">
+                  <h3>Back side(optional)</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+                <div class="col d-flex align-items-center mb-5">
+                  <h3>Design type:</h3>
+                  <h3
+                    id="size-answer"
+                    class="pink-montserrat"
+                    style="margin-left: 1rem"
+                  >
+                    Picture
+                  </h3>
+                </div>
+              </div>
+              <div class="row mb-2 mt-3">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                  <div class="summary-image"></div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="cost">
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+                <div class="col">
+                  <h3 class="summary-title mb-4">cost</h3>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+                <div class="col">
+                  <h3>
+                    {<span class="montserrat" style="font-weight: bold">X</span
+                    >1} pet rock
+                    <span class="pink-montserrat">$14</span>
+                  </h3>
+                </div>
+              </div>
+              <div class="row mb-5">
+                <div class="col-1">
+                  <img
+                    class="step-icon hidden-step"
+                    src="./assets/summary/step.png"
+                    class="hidden-step"
+                  />
+                </div>
+                <div class="col">
+                  <h3>Total: <span class="pink-montserrat">$14</span></h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <footer class="shop-footer mt-5 d-flex flex-column">
+          <div class="row nav-btns">
+            <button class="btn-next btn-light mt-5" id="back-btn-step-three">
+              Add rock
+            </button>
+            <button class="btn-next mt-5" id="next-btn-checkout">
+              Checkout
+            </button>
+          </div>
+        </footer>
+      </div>
     </div>
 
     <div class="summary-desktop hide" id="summary-view">
@@ -159,8 +532,9 @@
               alt="summary check"
             />
           </div>
-          <div class="col">
+          <div class="row d-flex summary-header">
             <h3 class="summary-title">Design</h3>
+            <button id="summary-close-btn">X</button>
           </div>
         </div>
         <div class="row mb-5" id="rock-size">
@@ -221,7 +595,7 @@
               />
             </div>
             <div class="col">
-              <h3>side 1</h3>
+              <h3>Front side</h3>
             </div>
           </div>
           <div class="row">
@@ -234,11 +608,13 @@
             </div>
             <div class="col d-flex align-items-center mb-5">
               <h3>Design type:</h3>
-              <img
-                class="pink-rect ml-2"
-                src="./assets/summary/pink-rectangle.png"
-                alt="pink rectangle"
-              />
+              <h3
+                id="size-answer"
+                class="pink-montserrat"
+                style="margin-left: 1rem"
+              >
+                Text
+              </h3>
             </div>
           </div>
           <div class="row mb-2 mt-3">
@@ -249,11 +625,8 @@
                 class="hidden-step"
               />
             </div>
-            <div class="col">
-              <img
-                src="./assets/summary/long-tan-rect.png"
-                alt="long tan rect"
-              />
+            <div class="design-type-text">
+              <h3>Hey there, my name is sean</h3>
             </div>
           </div>
           <div class="row">
@@ -263,9 +636,6 @@
                 src="./assets/summary/step.png"
                 class="hidden-step"
               />
-            </div>
-            <div class="col">
-              <img src="./assets/summary/tan-rect.png" alt="tan rect" />
             </div>
           </div>
         </div>
@@ -279,7 +649,7 @@
               />
             </div>
             <div class="col">
-              <h3>side 2 (optional)</h3>
+              <h3>Back side(optional)</h3>
             </div>
           </div>
           <div class="row">
@@ -292,11 +662,13 @@
             </div>
             <div class="col d-flex align-items-center mb-5">
               <h3>Design type:</h3>
-              <img
-                class="pink-rect ml-2"
-                src="./assets/summary/pink-rectangle.png"
-                alt="pink rectangle"
-              />
+              <h3
+                id="size-answer"
+                class="pink-montserrat"
+                style="margin-left: 1rem"
+              >
+                Picture
+              </h3>
             </div>
           </div>
           <div class="row mb-2 mt-3">
@@ -306,12 +678,7 @@
                 src="./assets/summary/step.png"
                 class="hidden-step"
               />
-            </div>
-            <div class="col">
-              <img
-                src="./assets/summary/long-tan-rect.png"
-                alt="long tan rect"
-              />
+              <div class="summary-image"></div>
             </div>
           </div>
           <div class="row">
@@ -321,9 +688,6 @@
                 src="./assets/summary/step.png"
                 class="hidden-step"
               />
-            </div>
-            <div class="col">
-              <img src="./assets/summary/tan-rect.png" alt="tan rect" />
             </div>
           </div>
         </div>
@@ -350,7 +714,8 @@
             </div>
             <div class="col">
               <h3>
-                <span class="montserrat">x</span>1 pet rock
+                {<span class="montserrat" style="font-weight: bold">X</span>1}
+                pet rock
                 <span class="pink-montserrat">$14</span>
               </h3>
             </div>
@@ -366,9 +731,6 @@
             <div class="col">
               <h3>Total: <span class="pink-montserrat">$14</span></h3>
             </div>
-          </div>
-          <div class="row">
-            <button class="btn-next mt-5" id="summary-close-btn">Close</button>
           </div>
         </div>
       </div>
