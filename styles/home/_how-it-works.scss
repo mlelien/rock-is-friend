@@ -1,76 +1,98 @@
 #how-container {
-	position: relative;
-	top: -14rem;
+  position: relative;
+  top: -14rem;
 
-	@media (max-width: $desktop) {
-		top: 3rem;
-	}
+  @media (max-width: $desktop) {
+    top: 3rem;
+  }
 }
 
 #how-two-selectors {
-	@media (max-width: $mobile) {
-		display: none;
-	}
+  @media (max-width: $mobile) {
+    display: none;
+  }
 }
 
 #how-two-selectors-mobile {
-	@media (min-width: $mobile) {
-		display: none;
-	}
+  @media (min-width: $mobile) {
+    display: none;
+  }
 }
 
 .how-selection {
-	opacity: 0.5;
+  opacity: 0.5;
 
-	&.selected {
-		opacity: 1.0;
-	}
+  &.selected {
+    opacity: 1;
+  }
 }
 
-.how-img  {
-	width: 12rem;
-	margin-right: 1.6rem;
+.how-img {
+  width: 12rem;
+  margin-right: 1.6rem;
 
-	@media (max-width: $desktop) {
-		width: 9rem;
-	}
+  @media (max-width: $desktop) {
+    width: 9rem;
+  }
 
-	@media (max-width: $mobile) {
-		margin-right: 0;
-	}	
+  @media (max-width: $mobile) {
+    margin-right: 0;
+  }
 }
 
 #how-box {
-	background-color: white;
-	border: 2px solid #ECEADF;
-	border-radius: 8px;
+  background-color: white;
+  border: 2px solid #eceadf;
+  border-radius: 8px;
 
-	padding: 2rem;
-	margin-top: -0.5rem;
+  padding: 2rem;
+  margin-top: -0.5rem;
 
-	width: 80%;
+  width: 80%;
 
-	z-index: -1;
+  z-index: -1;
 }
 
 #how-steps {
-	word-wrap: break-word;
+  word-wrap: break-word;
 
-	img {
-		width: 8rem;
-		margin: 0 1rem;
-	}
+  img {
+    width: 8rem;
+    margin: 0 1rem;
+  }
 
-	@media (max-width: $desktop) {
-		padding-left: 6.5rem;
-	}
+  @media (max-width: $desktop) {
+    padding-left: 6.5rem;
+  }
 
-	@media (max-width: $mobile) {
-		padding-left: 0;
-	}
+  @media (max-width: $mobile) {
+    padding-left: 0;
+  }
 }
 
 .just-how-div {
-	position: absolute;
-	top: -0.3rem;
+  position: absolute;
+  top: -0.3rem;
+}
+
+.top-nav-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shopping-cart-btn {
+  background-color: transparent;
+  font-size: 10px;
+  .shopping-cart-icon {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .top-nav-btns {
+    display: initial;
+  }
+  .shopping-cart-btn {
+    display: none;
+  }
 }

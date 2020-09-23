@@ -44,6 +44,18 @@ SummaryCloseButton.addEventListener("click", () => {
   // Add the "hide" class
   Summary.classList.add("hide");
 });
+let SummaryCloseButtonLarge = document.getElementById(
+  "summary-close-btn-large"
+);
+// Add an event listener on "click"
+SummaryCloseButtonLarge.addEventListener("click", () => {
+  // Get the summary page
+  let Summary = document.getElementById("summary-view");
+  // Remove the "Show" class
+  Summary.classList.remove("show");
+  // Add the "hide" class
+  Summary.classList.add("hide");
+});
 
 // Get the "Next" button
 let NextButton = document.getElementById("next-btn");
