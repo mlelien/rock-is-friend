@@ -61,3 +61,19 @@
     text-align: center;
   }
 }
+
+.instagram-handle-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+
+  img {
+    height: 5rem;
+    width: auto;
+  }
+  h2 {
+    letter-spacing: 0.25rem;
+    margin-left: 2rem;
+  }
+}

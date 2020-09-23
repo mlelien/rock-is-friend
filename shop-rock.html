@@ -24,6 +24,10 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./styles/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
 
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -42,28 +46,33 @@
     ></script>
   </head>
   <body>
-    <nav>
+    <nav style="position: fixed; width: 100%; top: 0; z-index: 999">
       <div class="row">
         <div class="col-3">
           <img src="./assets/logo.png" alt="logo" />
         </div>
         <div class="d-flex col-9 flex-row-reverse align-items-center">
-          <div>
+          <div class="top-nav-btns">
             <button class="btn-main btn-light mr-4">Login / Signup</button>
             <button class="btn-main btn-dark">Get Your Rock</button>
+            <button class="btn-main shopping-cart-btn">
+              <span class="material-icons shopping-cart-icon">
+                shopping_cart
+              </span>
+            </button>
           </div>
         </div>
       </div>
     </nav>
 
-    <div class="container">
+    <div class="container" style="padding-top: 100px">
       <div class="shop-title row">
         <h1 id="main-title">
           <span class="pink-text">rock</span> design studio
         </h1>
       </div>
 
-      <div class="animate__animated" id="step-one">
+      <div class="animate__animated" id="step-one" style="padding-top: 0px">
         <div class="row">
           <h2 class="shop-subtitle">select rock size</h2>
         </div>
@@ -147,7 +156,11 @@
         </footer>
       </div>
 
-      <div class="secondContainer animate__animated" id="step-two">
+      <div
+        class="secondContainer animate__animated"
+        id="step-two"
+        style="padding-top: 50px"
+      >
         <div class="row" id="design-title">
           <h2 class="shop-subtitle">Design type</h2>
         </div>
@@ -214,6 +227,7 @@
         >
           <div class="choose-text-header">
             <h3>Baloo Bhaina</h3>
+            <span class="material-icons"> arrow_drop_down </span>
           </div>
           <textarea></textarea>
         </div>
@@ -241,7 +255,11 @@
         </footer>
       </div>
 
-      <div class="thirdContainer animate__animated" id="step-three">
+      <div
+        class="thirdContainer animate__animated"
+        id="step-three"
+        style="padding-top: 50px"
+      >
         <div class="cart-items">
           <div class="cart-item-container">
             <button
@@ -545,11 +563,12 @@
                 src="./assets/summary/curr-step.png"
                 alt="summary check"
               />
-              <div class="connection d-flex justify-content-center">
+              <div class="connection d-flex justify-content-center pink-line">
                 <svg
                   width="2px"
                   height="306px"
                   viewBox="0 0 2 306"
+                  style="z-index: 999"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
                   xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -732,6 +751,11 @@
               <h3>Total: <span class="pink-montserrat">$14</span></h3>
             </div>
           </div>
+        </div>
+        <div class="row nav-btns">
+          <button class="btn-next mt-5" id="summary-close-btn-large">
+            Close
+          </button>
         </div>
       </div>
     </div>

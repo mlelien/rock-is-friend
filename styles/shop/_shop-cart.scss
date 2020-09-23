@@ -120,12 +120,19 @@
       margin: 0 !important;
     }
     .nav-btns {
-      flex-direction: column;
-      button {
-        width: 100%;
-      }
-      #back-btn-step-two {
+      flex-direction: row;
+      #back-btn-step-three {
         margin-right: 0rem;
+        width: 10rem !important;
+        background-color: transparent;
+        text-align: center;
+        padding: 0 !important;
+        border: none;
+      }
+      #next-btn-checkout {
+        padding-left: 0;
+        padding-right: 0;
+        width: 20rem;
       }
     }
   }
